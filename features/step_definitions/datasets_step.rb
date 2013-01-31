@@ -28,6 +28,11 @@ Given /^staging sets is exist$/ do
   @datasets.update_staging_sets
 end
 
+Then /^current sets is filled by staging sets$/ do
+  @datasets.current_sets.should_not == []
+  @datasets.current_sets.sort.should == @datasets.staging_sets.sort
+end
+
 Then /^update current sets from staging$/ do
   @datasets.save_current_sets
   a = @redis.smembers(:current_sets)

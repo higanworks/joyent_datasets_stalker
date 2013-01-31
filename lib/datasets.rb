@@ -43,6 +43,9 @@ class JoyentStalker
           @redis.sadd :staging_sets, [dataset['uuid'], dataset['name'], dataset['version']].join(":")
         end
       end
+
+      ## initialize
+      save_current_sets if current_sets == []
     end
 
     def save_current_sets
