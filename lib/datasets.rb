@@ -1,3 +1,11 @@
+#
+#  JoyentStalker::Datasets libraly
+#
+#
+#  Copyright (C) 2013 HiganWorks LLC
+#  Licensed under MIT https://github.com/higanworks/LICENSES
+# 
+
 require 'json'
 require 'open-uri'
 require 'openssl'
