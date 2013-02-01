@@ -1,1 +1,1 @@
-sidekiq: budle exec rake sidekiq:run
+sidekiq: rake sidekiq:run

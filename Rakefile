@@ -12,7 +12,7 @@ end
 namespace :sidekiq do
   desc "start sidekiq"
   task :run do
-    system("bundle exec sidekiq -c 5 -r ./tasks/post_to_twitter_worker.rb")
+    system("sidekiq -c 5 -r ./tasks/post_to_twitter_worker.rb")
   end
 
   desc "start sidekiq use localenv"
