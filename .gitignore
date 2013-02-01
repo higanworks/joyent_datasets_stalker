@@ -1,0 +1,6 @@
+*.swp
+bin/
+env/
+.bundle
+Gemfile.lock
+.rvmrc

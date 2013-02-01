@@ -14,7 +14,6 @@ Feature: datasets import
     Then Update staging sets on Redis
     But Raise exception if remote data is empty
 
-  @wip
   Scenario: Initialize
     Given Current sets is empty
     When Retrieve joyent datasets from remote
