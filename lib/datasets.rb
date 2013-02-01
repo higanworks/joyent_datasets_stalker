@@ -40,7 +40,7 @@ class JoyentStalker
       @redis.multi do
         @redis.del :staging_sets
         self.staging_datasets.each do |dataset|
-          @redis.sadd :staging_sets, [dataset['uuid'], dataset['name'], dataset['version']].join(":")
+          @redis.sadd :staging_sets, [dataset['name'], dataset['version'], dataset['uuid']].join(":")
         end
       end
 
