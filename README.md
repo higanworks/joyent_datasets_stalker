@@ -2,7 +2,7 @@
 
 Unofficial Joyent public dataset information from dataset api.
 
-The informations are published to [https://twitter.com/DatasetStalker](https://twitter.com/DatasetStalker) (current status is closed beta.)
+The informations are published to [https://twitter.com/DatasetStalker](https://twitter.com/DatasetStalker)
 
 
 ## Feature
